@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: rgb(255, 190, 165);
+  background: linear-gradient(
+    315deg,
+    rgba(255, 190, 165, 1) 0%,
+    rgba(255, 160, 122, 1) 69%
+  );
+}
+
+.App {
+  padding: 15px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.Cells {
+  font-family: sans-serif;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+}
+
+.cell {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: none;
+}
+
+.xtr {
+  background-color: #364f6b;
+  color: white;
+}
+
+.op {
+  background-color: lightsalmon;
+}
+
+.screen {
+  text-align: right;
+  padding: 20px 5px 20px 20px;
+  height: 19px;
+  margin-bottom: 10px;
+  color: #364f6b;
+  font-size: 20px;
+}
