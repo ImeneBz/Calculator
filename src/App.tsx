@@ -6,15 +6,15 @@ function App() {
   const [buttonDisabled, setButtonDisabled] = useState(false);
   const [operator, setOperator] = useState("");
 
-  function handleClick(event) {
-    const newClick = event.target.value;
+  function handleClick(event: React.MouseEvent<HTMLButtonElement>) {
+    const newClick = (event.target as HTMLButtonElement).value;
 
     setInput((prevValue) => prevValue + newClick);
     setButtonDisabled(false);
   }
 
-  function handleOperatorClick(event) {
-    const newClick = event.target.value;
+  function handleOperatorClick(event: React.MouseEvent<HTMLButtonElement>) {
+    const newClick = (event.target as HTMLButtonElement).value;
     setOperator(newClick);
     setInput((prevValue) => prevValue + newClick);
     setButtonDisabled(true);
